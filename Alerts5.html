@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Now calculate total marks and percentage and show the
+    // result in browser like this.(Hint: user table);
+var subject1 = prompt("Enter subject 1 name", "Biology");
+var subject2 = prompt("Enter subject 2 name", "Chemistry");
+var subject3 = prompt("Enter subject 3 name", "Physics");
+
+var totalMarks = 100;
+var totalMarks1=300;
+
+var sub1Obt = +prompt("Enter " + subject1 + " Obtained marks")
+var sub2Obt = +prompt("Enter " + subject2 + " Obtained marks")
+var sub3Obt = +prompt("Enter " + subject3 + " Obtained marks")
+
+var sub1Per = (sub1Obt / totalMarks) * 100;
+var sub2Per = (sub2Obt / totalMarks) * 100;
+var sub3Per = (sub3Obt / totalMarks) * 100;
+var totalSubject=sub1Obt+sub2Obt+sub3Obt;
+var percentage=(totalSubject/totalMarks1)*100;
+
+document.write("<table border='5px'>")
+document.write("<tr>")
+document.write("<th>")
+document.write("Subject")
+document.write("</th>")
+document.write("<th>")
+document.write("Total Marks")
+document.write("</th>")
+document.write("<th>")
+document.write("Obtained Marks")
+document.write("</th>")
+document.write("<th>")
+document.write("Percentage")
+document.write("</th>")
+document.write("</tr>")
+
+document.write("<tr>")
+document.write("<td>")
+document.write(subject1)
+document.write("</td>")
+document.write("<td>")
+document.write(totalMarks)
+document.write("</td>")
+document.write("<td>")
+document.write(sub1Obt)
+document.write("</td>")
+document.write("<td>")
+document.write(sub1Per + "%")
+document.write("</td>")
+document.write("</tr>")
+
+document.write("<tr>")
+document.write("<td>")
+document.write(subject2)
+document.write("</td>")
+document.write("<td>")
+document.write(totalMarks)
+document.write("</td>")
+document.write("<td>")
+document.write(sub2Obt)
+document.write("</td>")
+document.write("<td>")
+document.write(sub2Per + "%")
+document.write("</td>")
+document.write("</tr>")
+
+
+document.write("<tr>")
+document.write("<td>")
+document.write(subject3)
+document.write("</td>")
+document.write("<td>")
+document.write(totalMarks)
+document.write("</td>")
+document.write("<td>")
+document.write(sub3Obt)
+document.write("</td>")
+document.write("<td>")
+document.write(sub3Per + "%")
+document.write("</td>")
+document.write("</tr>")
+
+document.write("<tr>")
+document.write("<td>")
+document.write("yourMark")
+document.write("</td>")
+document.write("<td>")
+document.write(totalMarks1)
+document.write("</td>")
+document.write("<td>")
+document.write(totalSubject)
+document.write("</td>")
+document.write("<td>")
+document.write(percentage+ "%")
+document.write("</td>")
+document.write("</tr>")
+document.write("</table>")
+
+    // var myCity = "KarAchI"
+    // alert(myCity.toUpperCase());
+    // alert(myCity.toLowerCase());
+
+
+  </script>
+</body>
+
+</html>

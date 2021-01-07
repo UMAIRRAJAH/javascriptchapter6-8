@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+      <script>
+//             Write a program to take input a number from user &
+// display it’s multiplication table on your browser. If user
+// does not enter a new number, multiplication table of 5
+// should be displayed by default.
+        var a = +prompt("Enter the number of table to display");
+            document.write("Table of " + a + "<br>");
+            var b;
+            for (b = 1; b <= 10; b++) {
+                  var c = a * b;
+                  document.write(a + "x" + b + "=" + c + "<br>");
+            }
+
+      </script>
+</body>
+</html>
